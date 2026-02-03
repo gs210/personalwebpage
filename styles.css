@@ -19,26 +19,6 @@ possible.
 *************************************************/
 
 
-/* Colors Utilized:
-These are the main colors used throughout the webpage.
-Instead of using hex codes directly, I chose to define them
-as CSS custom properties (variables) within the root selector.
-This allows me to reference colors by name rather than by hex value.
-
-*/
-
-
-:root {
-  --brown-dark: #341510;
-  --brown-deep: #150D0B;
-  --tan-light: #EACEA9;
-  --tan-medium: #D39758;
-  --gold: #E9CCAA;
-  --gray-light: #D9D9D9;
-  --gray-warm: #A79987;
-  --black: #000000;
-}
-
 /* ------------------------------------------------------------------------------------------------------- */
 
 /* Font Info:
@@ -115,7 +95,7 @@ ul {
 /* Website Name in Header */
 .site-name {
   font-family: 'Instrument Serif', serif;
-  font-size: 40px
+  font-size: 40px;
   font-weight: 400;
   color: #D39758;
   letter-spacing: 1px;
