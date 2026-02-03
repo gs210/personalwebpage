@@ -6,6 +6,8 @@ CS 120: Assignment 1
 This version "style-me-two" has style changes to fit the
 specific additional changes/requirements asked.
 
+Krub used instead of Thabit.
+
 *************************************************/
 
 
@@ -272,6 +274,10 @@ As represented in original figma design concept. */
   color: #000;
   max-width: 604px;
   margin-top: -15px;
+}
+
+.section-3-description p {
+  margin-bottom: 10px;
 }
 
 .section-3-image {
@@ -555,7 +561,8 @@ As represented in original figma design concept. */
 }
 
 .guestbook-card {
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
 
   background-color: #341510;
@@ -573,6 +580,12 @@ As represented in original figma design concept. */
   margin-bottom: 8px;
 }
 
+.guestbook-header {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
 .guestbook-subtext {
   font-size: 16px;
   margin-bottom: 30px;
@@ -580,12 +593,12 @@ As represented in original figma design concept. */
 
 .guestbook-form {
   display: flex;
-  gap: 60px;
+  justify-content: center;
   margin-top: 35px;
 }
 
 .form-left {
-  width: 45%;
+  width: 420px;
 }
 
 .form-right {
@@ -620,7 +633,8 @@ textarea {
 }
 
 textarea {
-  width: 100%;
+  width: 90%;
+  max-width: 420px;
   margin-top: 8px;
 }
 
