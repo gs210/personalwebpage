@@ -283,13 +283,12 @@ As represented in original figma design concept. */
 }
 
 .section-3-inner {
-  width: 1381px;
+  max-width: 1381px;
+  width: 100%;
   height: auto;
   margin: 0 auto;
-
   background-color: #EACEA9;
   border-radius: 13px;
-
   display: flex;
   overflow: hidden;
 }
@@ -542,7 +541,7 @@ As represented in original figma design concept. */
 }
 
 .books-table {
-  width: 85%;
+  width: 80%;
   margin: 0 auto;
   border-collapse: collapse;
   background-color: #EACEA9;
@@ -701,14 +700,13 @@ button {
   justify-content: space-between;
 }
 
-/* Left */
+
 .footer-left {
   font-family: 'Instrument Serif', serif;
   font-size: 18px;
   color: #D39758;
 }
 
-/* Center nav */
 .footer-center {
   display: flex;
   gap: 28px;
@@ -721,7 +719,6 @@ button {
   text-decoration: none;
 }
 
-/* Right socials */
 .footer-right {
   display: flex;
   flex-direction: column;
@@ -739,4 +736,46 @@ button {
 .footer-center a:hover,
 .footer-right a:hover {
   color: #EACEA9;
+}
+
+
+/* Started working on responsiveness, not finished at all with it, but will have it perfected post submission */
+
+@media (min-width: 768px) {
+
+
+  .section-one-inner,
+  .section-3-inner,
+  .section-5-inner {
+    flex-direction: row;
+  }
+
+
+  .about-text,
+  .section-3-text,
+  .section-5-text {
+    width: 45%;
+  }
+
+  .about-image,
+  .section-3-image,
+  .section-5-image {
+    width: 55%;
+  }
+
+
+  .section-2-inner {
+    flex-direction: row;
+  }
+
+
+  .section-2-image img {
+    width: 260px;
+    height: 320px;
+  }
+
+
+  .books-table {
+    width: 85%;
+  }
 }
